@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="mainpage_option">
+        <item>My Itineraries</item>
+        <item>New Itinerary</item>
+        <item>Browse</item>
+        <item>Popular Itineraries</item>
+        <item>Sign out</item>
+    </string-array>
+</resources>

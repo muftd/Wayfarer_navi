@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation		= "vertical"
+	android:layout_width	= "match_parent"
+	android:layout_height	= "match_parent"
+>
+
+<!-- top menu -->
+<include android:id="@+id/topmenu"
+	    	 		 layout="@layout/toplevel_content"/>
+
+<TextView
+		android:id					="@+id/adventure_name"
+		android:layout_width		="match_parent"
+		android:layout_height		="wrap_content"
+		android:gravity	= "center"
+		android:textIsSelectable	="true"
+		android:textSize			="34sp"
+		android:textColor = "@color/white" 
+		android:background="@drawable/secondary_layout_color"/>	    	 		 
+
+<ListView
+	android:id = "@+id/my_itiernaries_list"
+	android:layout_width = "match_parent"
+	android:layout_height = "wrap_content"
+/>
+
+<RelativeLayout
+	android:orientation		= "horizontal"
+	android:layout_width	= "match_parent"
+	android:layout_height	= "wrap_content"
+	android:gravity	= "bottom">
+
+	<Button
+		android:id = "@+id/add_itineraries"
+		android:layout_width = "wrap_content"
+		android:layout_height = "wrap_content"
+		android:layout_alignParentBottom = "true"
+		android:layout_centerHorizontal = "true"
+		android:text = "@string/add"
+		android:background = "#00000000"
+		android:onClick = "AddItineraries"
+	/>
+	<Button
+		android:id = "@+id/edit_itineraries"
+		android:layout_width = "wrap_content"
+		android:layout_height = "wrap_content"
+		android:layout_alignParentBottom = "true"
+		android:layout_alignParentLeft = "true"
+		android:text = "@string/edit"
+		android:background = "#00000000"
+		android:onClick = "EditItineraries"
+	/>
+	<Button
+		android:id = "@+id/delete_itineraries"
+		android:layout_width = "wrap_content"
+		android:layout_height = "wrap_content"
+		android:layout_alignParentBottom = "true"
+		android:layout_alignParentRight = "true"
+		android:text = "@string/del"
+		android:background = "#00000000"
+		android:onClick = "DeleteItineraries"
+	/>
+</RelativeLayout>
+
+</LinearLayout>
+	

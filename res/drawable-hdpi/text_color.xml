@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+<!-- Description: provide color config for textview in list. -->
+<!--  Question: program crashed when used this xml in layout's textview, "@drawable/text_color. " 
+				but I could use "@color/white" directly. I don't know why.-->
+    <!-- focused -->
+    <item android:drawable="@color/white" android:state_focused="true"/>
+    <!-- pressed -->
+    <item android:drawable="@color/white" android:state_pressed="true"/>
+    <!-- default -->
+    <item android:drawable="@color/white"/>
+
+</selector>

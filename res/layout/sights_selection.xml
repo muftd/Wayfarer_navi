@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--Description: 
+	UI after click new itineraries on main menu
+	User input name of new advanture
+	mock P3-->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation		= "vertical"
+	android:layout_width	= "match_parent"
+	android:layout_height	= "match_parent"
+>
+<include android:id="@+id/topmenu"
+	    	     layout="@layout/toplevel_content"/>
+	<TextView
+		android:id					="@+id/adventure_name"
+		android:layout_width		="match_parent"
+		android:layout_height		="wrap_content"
+		android:gravity				= "center"
+		android:textIsSelectable	="true"
+		android:textSize			="34sp" 
+		android:textColor			= "@color/white" 
+		android:background			="@drawable/secondary_layout_color"/>
+	<RelativeLayout
+		android:orientation		= "vertical"
+		android:layout_width	= "match_parent"
+		android:layout_height	= "match_parent"
+	>
+		<TextView
+			android:id = "@+id/destination_name"
+			android:layout_width = "match_parent"
+			android:layout_height = "wrap_content"
+			android:gravity = "center"   
+			android:textSize = "34sp"
+		/>
+		<TextSwitcher
+			android:id						= "@+id/sight_name"
+			android:layout_width			= "wrap_content"
+			android:layout_height			= "wrap_content"
+			android:layout_below = "@id/destination_name"
+		/>
+		<ImageButton
+			android:id						= "@+id/add_sight"
+			android:layout_width			= "wrap_content"
+			android:layout_height			= "wrap_content"
+			android:layout_alignBottom		= "@id/sight_name"
+			android:layout_alignTop			= "@id/sight_name"
+			android:layout_alignParentRight	= "true"
+			android:background				="@drawable/button_add_sight"
+			android:onClick					="ClickToAddSights"
+		/>
+
+		<ViewFlipper
+			android:id = "@+id/viewFlipper"
+			android:layout_width = "300dp"
+			android:layout_height = "300dp"
+			android:gravity	= "center"
+			android:layout_below	= "@id/sight_name"
+		></ViewFlipper>
+			
+
+
+		<TextSwitcher
+			android:id = "@+id/sight_description"
+			android:layout_width = "match_parent"
+			android:layout_height = "wrap_content"
+			android:layout_below = "@id/viewFlipper"
+		/>
+	</RelativeLayout>
+</LinearLayout>

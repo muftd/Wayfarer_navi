@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Wayfarer_navi.app</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <!-- add by mu -->
+    <string name="back_to_main">bm</string>
+    <string name="wayfarer">Wayfarer</string>
+    <string name="to_be_done">tbd</string>
+    <string name="new_itineraries_actname">new_itineraries</string>
+    <string name="name_adventure_intro">Name your adventure</string>
+    <string name="adventure_name">new!</string>
+    <string name="confirm">OK</string>
+	<string name="add_destination">Add Destination</string>
+	<string name="sights_selection">Sights Selection</string>
+	<string name="sight_description_one">This is Forbidden City!</string>
+	<string name="temp_sightname">Forbidden City</string>
+	<string name="my_itineraries">My Itineraries</string>
+	<string name="edit">edit</string>
+	<string name="add">add</string>
+	<string name="del">del</string>
+</resources>

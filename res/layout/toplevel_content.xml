@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+ <!-- 1. This xml define the top level menu UI and content
+ 	  2. This xml will be reused by other UI to display the top level menu
+ 	  3. This file use 'merge' tag, other file will use 'include' tage to reuse it
+ -->
+
+<merge
+ xmlns:android="http://schemas.android.com/apk/res/android">
+ 	
+<RelativeLayout
+	android:id				= "@+id/toplevel_content_layout"
+	android:layout_width	= "match_parent"
+	android:layout_height	= "wrap_content"
+	android:orientation		= "horizontal"
+	android:background="@drawable/main_layout_color"
+>
+	<ImageButton
+		android:id						= "@+id/back_to_main"
+		android:layout_width			= "50dp"
+		android:layout_height			= "50dp"
+		android:layout_alignParentLeft	= "true" 
+		android:layout_alignParentStart = "true"
+		android:background="@drawable/main_button_left"
+		android:onClick				    = "ClickToBackMain"
+		android:contentDescription		= "@string/back_to_main"
+	/>
+	<TextView
+		android:layout_width			= "wrap_content"
+		android:layout_height			= "wrap_content"
+		android:layout_centerInParent	= "true"
+		android:text					= "@string/wayfarer"
+		android:textSize			    = "34sp"
+		android:typeface				= "serif"	
+		android:textColor				= "@color/white"
+	/>
+	<ImageButton
+		android:id						= "@+id/to_be_done"
+		android:layout_width			= "50dp"
+		android:layout_height			= "50dp"
+		android:layout_alignParentRight	= "true"
+		android:layout_alignParentEnd   = "true" 
+		android:background="@drawable/main_button_right"
+		android:onClick					= "ClickToMyItineraries"
+		android:contentDescription		= "@string/to_be_done"
+	/>
+</RelativeLayout>
+</merge>

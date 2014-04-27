@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.wayfarer_navi.app"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="18" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.example.wayfarer_navi.app.MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        
+        <activity
+            android:name="com.example.wayfarer_navi.app.NameNewAdventure"
+            android:label="@string/new_itineraries_actname">   
+        </activity>
+        
+        <activity
+            android:name="com.example.wayfarer_navi.app.AddDestination"	
+            android:label="@string/add_destination"	>
+        </activity>
+        
+        <activity
+            android:name="com.example.wayfarer_navi.app.SightsSelection"
+            android:label="@string/sights_selection">
+        </activity>
+        
+        <activity
+            android:name="com.example.wayfarer_navi.app.MyItineraries"
+            android:launchMode = "singleTask"
+            android:label="@string/my_itineraries">            
+        </activity>
+    </application>
+
+</manifest>
